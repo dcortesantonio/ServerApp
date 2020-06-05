@@ -1,17 +1,20 @@
 <template>
   <div id="app">
+    <app-header></app-header>
+    <router-link to="history" tag="button" class="btn btn-primary">History</router-link>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+  //    <button class="btn btn-primary">CLick for fun</button>
+import header from "./components/header";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: 'app',
+  components:{
+          //'users':User,
+   // 'home': HelloWorld,
+    'app-header': header
   }
 }
 </script>
